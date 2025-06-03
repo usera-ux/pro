@@ -1,0 +1,27 @@
+[{
+    "name":"Fast Food",
+    "image":"image copy.png",
+    "describe":"This is the big portion of burger"  
+},
+{
+    "name":"Pizza",
+    "image":"image copy 2.png",
+    "describe":"This is the big portion of burger"  
+},
+{
+    "name":"Pasta",
+    "image":"image copy 3.png",
+    "describe":"This is the big portion of burger"  
+},
+{
+    "name":"Chinese food",
+    "image":"image copy 4.png",
+    "describe":"This is the big portion of burger"  
+},
+{
+    "name":"Turkish food",
+    "image":"image copy 5.png",
+    "describe":"This is the big portion of burger"  
+}
+
+]

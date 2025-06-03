@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <img src="./image.png" alt="" class="img-bg">
+    <header>
+        <nav>
+              <div class="burger" onclick="toggleMenu()">&#9776; </div>
+            <div id="mobile"> 
+            <div class="logo" onclick="window.location.reload()">Logo</div>
+            </div>
+            <div class="head" id="mobile">
+              <div class="he">Home</div>
+               <div class="he">About us</div>
+                <div class="he">Menu</div>
+                 <div class="he">Contact us</div>
+                 <div class="toggle" onclick="change()">
+                    <div class="circle"></div>
+                 </div>
+                 <button class="login" onclick="opened(this)">Login</button>
+            </div>     
+        </nav>
+    </header>
+
+    <h1 class="text">Panda with you</h1>
+    <p class="p-text">Delicious & tasty food! <br>Always with quick delivery just <span style="color: red;">15min</span> </p>
+
+    <button class="more" onclick="location.href='#carousel' ">More</button>
+
+    <div class="login-card">
+        <span class="close-card" onclick="closed()">&times;</span>
+        <h2>Panda food</h2>
+        <input type="text"  placeholder="Enter your name" class="input" id="inputname">
+        <br>
+        <input type="text" placeholder="Enter your number" class="input" id="inputumber">
+        <br>
+        <button class="btn" onclick="closi()">Submit</button>
+    </div>
+
+
+   <h1 class="text11">About Our Products</h1>
+     <input type="text" placeholder="Search for cuisine..." id="searchinput">
+    <div id="container"></div>
+
+  
+    <div class="modal" id="modal" style="display: none;">
+        <div class="modal-container" id="modal-container">
+             <span onclick="closeModal()">&times;</span>
+            <img src="" id="modal-img" alt="" width="250px" height="250px">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+<div style="display: flex; justify-content: space-around ;" class="mainn">
+<div class="main">
+    <h1>Now Look to our food</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam exercitationem, vitae odit deserunt beatae eaque molestias repellat cum neque at debitis hic! Officiis temporibus excepturi molestias distinctio omnis, perspiciatis dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed ea provident iusto qui omnis magni officiis voluptatum labore dolorum rem incidunt reiciendis facilis? Porro laboriosam repellendus dolore voluptatem quod!</p>
+</div>  
+
+<div class="carousel"  id="carousel">
+    <button id="prev " class="btn-car" onclick="prevslide()">prev</button>
+    <img src="./image copy 2.png" alt="" id="image-carousel" width="300px" height="300px">
+    <button id="next" class="btn-car" onclick="nextslide()">next</button>
+</div>
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
