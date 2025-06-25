@@ -55,20 +55,24 @@ document.getElementById('searchinput').addEventListener('input',function(){
     renderPlace(filtertext);
 })
 
-function openModal(place){
-    document.getElementById('modal-img').src = place.image;
-    document.getElementById('modal-text').innerText= place.name;
-    document.getElementById('modal').style.display = "flex"
+function openModal(imgSrc, text) {
+  document.getElementById('modal-img').src = imgSrc;
+  document.getElementById('modal-text').textContent = text;
+  document.getElementById('modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
-function closeModal(){
-    document.getElementById('modal').style.display = 'none'
+
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
+
 
 
 const images = ['image copy 2.png','image copy 3.png','image copy 4.png','image copy 5.png',]
 currentIndex = 0;
 
-function showall(){
+function showall(){ 
     const image = document.getElementById('image-carousel');
     image.src = images[currentIndex];
 }
@@ -81,8 +85,18 @@ function nextslide(){
     showall(currentIndex)
 }
 
-
-function toggleMenu(){
-    const menu = document.getElementById('mobile');
-    menu.classList.toggle('show');
+// dfsgdhfjgkhj
+// Dark mode қосу
+function change() {
+  document.body.classList.toggle('dark');
 }
+
+// Burger menu ашу/жабу анимациямен
+function toggleMenu() {
+  const menu = document.querySelector('.head');
+  const burger = document.querySelector('.burger');
+
+  menu.classList.toggle('show');
+  burger.classList.toggle('active');
+}
+
